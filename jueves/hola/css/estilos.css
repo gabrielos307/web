@@ -1,0 +1,162 @@
+body{
+	background: #043754;
+}
+h1{
+	color: white;
+	text-align: center;
+}
+h2{
+	color: white;
+	text-align: center;
+}
+div{
+	margin: auto;
+
+}
+
+@keyframes cuadrado {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* The element to apply the animation to */
+
+.cuadrado{
+	width: 50px;
+	height: 50px;
+	background: red;
+	animation-name: cuadrado;
+    animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes rectangulo {
+	from{left: 0px; top:0px;}
+	to{left:200px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.rectangulo {
+   width: 100px;
+   height: 200px;
+   background: red;
+    position: relative;
+    background-color: red;
+    animation-name: rectangulo;
+    animation-duration: 2s;
+}
+
+@keyframes triangulo{
+	0%   {	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;left:0px; top:0px;}
+    25%  {	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid blue; left:200px; top:0px;}
+    50%  {	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green; left:200px; top:200px;}
+    75%  {	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid gray; left:0px; top:200px;}
+    100% {	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid yellow; left:0px; top:0px;}
+}
+
+.triangulo{
+	height: 0;
+ 	width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+	animation-name: triangulo;
+	animation-duration: 2s;
+ }
+
+
+.circulo{
+	border-radius:50%;
+	width: 50px;
+	height: 50px;
+	background: white;
+	animation: dots 1s linear 0s infinite;
+}
+@keyframes dots {
+	0% { box-shadow: 
+      100px 0 0 0 white, 
+      300px 0 0 0 white, 
+      500px 0 0 0 white, 
+      700px 0 0 0 white,
+      900px 0 0 0 white, 
+      1100px 0 0 0 white, 
+      1300px 0 0 0 white;}
+  
+100% { box-shadow: 
+      0px 0 0 0 white, 
+      100px 0 0 0 white,
+      300px 0 0 0 white, 
+      500px 0 0 0 white, 
+      700px 0 0 0 white, 
+      900px 0 0 0 white, 
+      1100px 0 0 0 white;}
+}
+
+.trapecio{
+	width: 80px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+
+@keyframes ovalo {
+0% {transform: rotate(0deg);left:0px;}
+100% {transform: rotate(180deg);left:0px;}
+}
+
+.ovalo{
+	border-radius:50%;
+	width: 200px;
+	height: 100px;
+	background: red;
+	position: relative;
+	animation: ovalo 4s infinite;
+}
+
+
+
+
+.pacman{
+  margin:40px 10px;
+}
+
+.pacman1{
+  background-color:yellow;
+  height:100px;
+  width:200px;
+  border-radius:100px 100px 0 0;
+  animation: up .5s infinite linear;
+}
+
+.pacman2{
+  background-color:yellow;
+  height:100px;
+  width:200px;
+  border-radius: 0 0 100px 100px;
+  animation: down .5s infinite linear;
+}
+
+@keyframes up {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-30deg);}
+  
+}
+@keyframes down {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(30deg);}	
+}
+
+

@@ -1,0 +1,56 @@
+.titulos-principales{ margin: 2px; /*no va tener margen*/ 
+		background-color: black; 
+	}
+h1{ 
+	margin: 2px; 
+	color: #CCEEFF; 
+}
+.menu-navegacion a{ 
+	display: inline-block; /*Que el texto salga horizontal*/ 
+	width: 100px; /*Ancho*/ 
+	height: 10px; /*Altura*/	 
+	padding: 5px; /*Relleno*/
+	margin: 0px 10px;/*margen*/
+	background: #D0A5AB;/*Fondo*/
+	border: none; /*Bordes*/ 
+	color: black; text-align: center; /*Alineación centrada*/
+	font-size: 12px; /*tamaño fuente*/
+}
+.menu-navegacion{ 
+	text-align: center; 
+}
+body{ 
+	margin: 0px; padding: 0; height: 100%; background: #AC9FC0; }
+h1, h2{ text-align: center; 
+}
+a{ 
+text-decoration: none; /*underline, overline, line throught*/
+}
+li{	
+	display: inline; 
+}
+li:hover a{ 
+	background: #B00BF6; 
+}
+a:visited{ 
+	color: purple; 
+}
+.informacion-personal{ 
+	border: 0px solid #ccc; 
+	width: 60%; border-top: 40px; 
+	border-right: none; 
+	border-left: none; 
+	text-align: center; 
+}
+.footer{ 
+padding: 20px; 
+height: 60px; 
+background: #37446D; 
+bottom: 1px; /*para que este pegado hasta abajo de la pagina*/
+}
+table, th, td{ 
+	border: 1px dotted black; 
+	text-align: justify; 
+}
+th, td{	padding: 20px; 
+}

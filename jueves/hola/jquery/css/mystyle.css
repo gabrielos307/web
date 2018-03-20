@@ -1,0 +1,6 @@
+.col, .col-md-1, .col-md-4, .col-md-6, .col-md-8, .col-6{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: rgba(244, 66, 95, 1);
+	border: 1px solid rgba(119, 115, 115, 1);
+}
